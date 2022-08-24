@@ -20,6 +20,7 @@ function Search() {
 
   return (
     <FormStyle onSubmit={searchSubmitHandler}>
+
       <div>
         <FaSearch></FaSearch>
         <input type="text" onChange={movieSearch} placeholder='Search for a movie' />
@@ -32,7 +33,12 @@ function Search() {
 
 export default Search;
 
+
+
 const FormStyle = styled.form`
+h1{
+  color:'white'; 
+}
 div{
   position:relative;
   display:flex; 
